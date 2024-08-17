@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".songs"
+    android:orientation="vertical"
+    android:background="#F1F0F0"
+    >
+
+    <!--
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    >
+    <EditText
+        android:layout_width="35mm"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="Serarch "
+        android:id="@+id/serach_text"
+        android:paddingLeft="15dp"
+        />
+
+    <ImageView
+        android:layout_marginLeft="35dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/search"
+        />
+
+
+
+
+
+</LinearLayout>
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tit"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:text="ELHANAN Songs "
+        android:fontFamily="monospace"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:padding="7dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:paddingBottom="35dp"
+        android:background="#F1F0F0"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/fragment_horizontal_margin"
+        android:layout_marginRight="@dimen/fragment_horizontal_margin"
+        android:layout_weight="1"
+        >
+
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:menu="@menu/bottom_navigation" />
+
+
+
+
+</LinearLayout>

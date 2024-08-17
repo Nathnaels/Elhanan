@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/outline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_songs"
+            android:icon="@drawable/baseline_lyrics_24"
+            android:title="Songs " />
+
+        <item
+            android:id="@+id/nav_Direct_message"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="Messages" />
+    </group>
+</menu>
